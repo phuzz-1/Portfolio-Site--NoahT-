@@ -65,7 +65,7 @@ a:hover {
 
 .container {
     padding: 16px;
-}
+   }
 
 .row {
     margin: 25px 0;
@@ -209,6 +209,9 @@ margin-bottom: 16px;
 .marginTop{
     margin-top:16px;
 }
+.marginBot{
+    margin-bottom:16px;
+}
 .elCenter{
     display: block; 
     margin: auto;
@@ -216,6 +219,9 @@ margin-bottom: 16px;
 .paddingW16{
     padding-left:16PX;
     padding-right:16PX;
+}
+.paddingBot{
+    padding-bottom:16px;
 }
 /* Colors */
 .white{
