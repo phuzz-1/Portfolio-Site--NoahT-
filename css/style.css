@@ -1,14 +1,23 @@
+/* Base colors */
+
+:root{
+    --black:#262626;
+    --white:#ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ffffff;
     font-family: "Anek Latin", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    
-
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.6;
-    color: #4a4a4a;
+    line-height: 1.4;
+    color: var(--black);
 }
 
 h1,
@@ -16,6 +25,7 @@ h2,
 h3,
 h4 {
     line-height: 1.4;
+    margin-bottom: 0;
 }
 
 h1 {
@@ -26,6 +36,7 @@ h1 {
 h2 {
     font-size: 2.25em;
     font-weight: 700;
+    
 }
 
 h3 {
@@ -37,55 +48,227 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
-
+h2 + p{
+    margin-bottom: 0px;
+}
 img {
     width: 100%;
 }
-a > img{
+
+a>img {
     width: auto;
 }
-/* links */
-a {
-    color: #1EAEDB; }
-  a:hover {
-    color: #0FA0CE; }
+
+a:hover {
+    color: #0FA0CE;
+}
+
+.container {
+    padding: 16px;
+}
+
+.row {
+    margin: 25px 0;
+}
+
+main {
+  padding-top: 133px;
+}
+
+/* nav  */
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width:100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+nav>ul>li>a {
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+nav>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    max-width: 250px;
+}
+
+/* hero */
+#hero {
+    /* background-color: #ffe4c4; */
+    
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+    text-align: center;
+    
+}
+
 /*Button styles  */
 .button {
     display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  box-sizing: border-box; 
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+   
+}
+.button2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #555;
+}
+/* Card */
+.largeCard{
+    border-radius: 1rem;
+    padding: 3.75rem;
+    margin: 1.5rem 0;
+}
+.card{
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.smallCard{
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+.cardText p{
+font-weight: 500;
+line-height: 1.2;
+margin-bottom: 16px;
+}
+.imgFix{
+    margin-bottom: -7px;
 }
 
+.imgBotRadius{
+    border-radius: 0 0 1rem 1rem;
+}
+.endLogo{
+    max-width: 200px;
+}
+
+.mBorder1{
+    border-radius: 10px ;
+    border:3px solid #D7D8D9  ;
+}
+.mBorder2{
+    border-radius: 10px ;
+    border:1px solid #E16A44  ;
+}
+
+/* utility classes */
+.noMargin{
+    margin:0px !important
+}
+.topMarginDelete{
+    margin-top: 0px;
+}
+.botMarginDelete{
+    margin-bottom: 0px;
+}
+.topPaddingDelete{
+    padding-top: 0px;
+}
+.botPaddingDelete{
+    padding-bottom: 0px;
+}
+.marginTop{
+    margin-top:16px;
+}
+.elCenter{
+    display: block; 
+    margin: auto;
+}
+.paddingW16{
+    padding-left:16PX;
+    padding-right:16PX;
+}
+/* Colors */
+.white{
+    background-color: var(--white);
+}
 /* Forklore colors */
-.fLightGreen{
+.fLightGreen {
     background-color: #C4D6C4;
 }
-.fdarkGreen{
+
+.fdarkGreen {
     background-color: #8FAE90;
 }
-.fRed{
+
+.fRed {
     background-color: #D37973;
 }
-.fYellow{
+
+.fYellow {
     background-color: #F1D6AC;
 }
-.fPurple{
+
+.fPurple {
     background-color: #BE94D6;
+
 }
-.fBlue{
+
+.fBlue {
     background-color: #95D1DF;
 }
+/* Motiv colors*/
+.mBg{
+    background-color: #EBECED;
+}
+.mGray20{
+    background-color:#D8D8D8 ;
+}
+.mGray40{
+    background-color:#AFB0B4 ;
+}
+.mGray60{
+    background-color:#87898E ;
+}
+.mGray80{
+    background-color:#5F6169 ;
+}
+.mGray100{
+    background-color:#373A43 ;
+}
 
-
-  
+.mOrange{
+    background-color: #E16A44;
+}
+.mOffWhite{
+    background-color: #f8f8f2;
+}
