@@ -1,8 +1,8 @@
 /* Base colors */
 
-:root{
-    --black:#262626;
-    --white:#ffffff;
+:root {
+    --black: #262626;
+    --white: #ffffff;
 }
 
 * {
@@ -36,7 +36,7 @@ h1 {
 h2 {
     font-size: 2.25em;
     font-weight: 700;
-    
+
 }
 
 h3 {
@@ -48,9 +48,11 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
-h2 + p{
+
+h2+p {
     margin-bottom: 0px;
 }
+
 img {
     width: 100%;
 }
@@ -60,19 +62,19 @@ a>img {
 }
 
 a:hover {
-    color: #0FA0CE;
+    color: #ff7f50;
 }
 
 .container {
     padding: 16px;
-   }
+}
 
 .row {
     margin: 25px 0;
 }
 
 main {
-  padding-top: 133px;
+    padding-top: 133px;
 }
 
 /* nav  */
@@ -81,10 +83,10 @@ header {
     text-align: center;
     padding: 10px 0;
     position: fixed;
-    width:100%;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    
+
 }
 
 nav>ul {
@@ -115,21 +117,26 @@ nav>ul>li>a:hover {
 
 /* hero */
 #hero {
-    /* background-color: #ffe4c4; */
-    
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+
+
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
 }
 
 #hero h1 {
     text-align: center;
-    
+
+}
+
+#hero span {
+    display: block;
 }
 
 /*Button styles  */
 .button {
     display: inline-block;
+
     height: 38px;
     padding: 0 30px;
     color: #555;
@@ -142,91 +149,120 @@ nav>ul>li>a:hover {
     text-decoration: none;
     border-radius: 4px;
     border: 1px solid #bbb;
-   
+    transition: 0.2s background-color;
+
 }
+
+.button:hover {
+    background-color: #212121;
+    color: #e7e7ea;
+}
+
 .button2 {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
     color: #555;
 }
+
 /* Card */
-.largeCard{
+.largeCard {
     border-radius: 1rem;
     padding: 3.75rem;
     margin: 1.5rem 0;
 }
-.card{
+
+.card {
     padding: 2rem;
     border-radius: 1rem;
 }
-.smallCard{
+
+.smallCard {
     padding: 1rem;
     background-color: var(--white);
     border-radius: 1rem;
 }
-.cardText p{
-font-weight: 500;
-line-height: 1.2;
-margin-bottom: 16px;
+
+.cardText p {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 16px;
 }
-.imgFix{
+
+.imgFix {
     margin-bottom: -7px;
 }
 
-.imgBotRadius{
+.imgBotRadius {
     border-radius: 0 0 1rem 1rem;
 }
-.endLogo{
+
+.endLogo {
     max-width: 200px;
 }
 
-.mBorder1{
-    border-radius: 10px ;
-    border:3px solid #D7D8D9  ;
+.mBorder1 {
+    border-radius: 10px;
+    border: 3px solid #D7D8D9;
 }
-.mBorder2{
-    border-radius: 10px ;
-    border:1px solid #E16A44  ;
+
+.mBorder2 {
+    border-radius: 10px;
+    border: 1px solid #E16A44;
 }
 
 /* utility classes */
-.noMargin{
-    margin:0px !important
+.noMargin {
+    margin: 0px !important
 }
-.topMarginDelete{
+
+.topMarginDelete {
     margin-top: 0px;
 }
-.botMarginDelete{
+
+.botMarginDelete {
     margin-bottom: 0px;
 }
-.topPaddingDelete{
+
+.topPaddingDelete {
     padding-top: 0px;
 }
-.botPaddingDelete{
+
+.botPaddingDelete {
     padding-bottom: 0px;
 }
-.marginTop{
-    margin-top:16px;
+
+.marginTop {
+    margin-top: 16px;
 }
-.marginBot{
-    margin-bottom:16px;
+
+.marginBot {
+    margin-bottom: 16px;
 }
-.elCenter{
-    display: block; 
+
+.elCenter {
+    display: block;
     margin: auto;
 }
-.paddingW16{
-    padding-left:16PX;
-    padding-right:16PX;
+
+.paddingW16 {
+    padding-left: 16PX;
+    padding-right: 16PX;
 }
-.paddingBot{
-    padding-bottom:16px;
+
+.paddingBot {
+    padding-bottom: 16px;
 }
+
+.inline {
+    display: inline-block;
+}
+
 /* Colors */
-.white{
+.white {
     background-color: var(--white);
 }
+
 /* Forklore colors */
 .fLightGreen {
     background-color: #C4D6C4;
@@ -252,29 +288,156 @@ margin-bottom: 16px;
 .fBlue {
     background-color: #95D1DF;
 }
+
 /* Motiv colors*/
-.mBg{
+.mBg {
     background-color: #EBECED;
 }
-.mGray20{
-    background-color:#D8D8D8 ;
-}
-.mGray40{
-    background-color:#AFB0B4 ;
-}
-.mGray60{
-    background-color:#87898E ;
-}
-.mGray80{
-    background-color:#5F6169 ;
-}
-.mGray100{
-    background-color:#373A43 ;
+
+.mGray20 {
+    background-color: #D8D8D8;
 }
 
-.mOrange{
+.mGray40 {
+    background-color: #AFB0B4;
+}
+
+.mGray60 {
+    background-color: #87898E;
+}
+
+.mGray80 {
+    background-color: #5F6169;
+}
+
+.mGray100 {
+    background-color: #373A43;
+}
+
+.mOrange {
     background-color: #E16A44;
 }
-.mOffWhite{
+
+.mOffWhite {
     background-color: #f8f8f2;
 }
+
+@keyframes color-change {
+    from {
+        fill: #edc655;
+    }
+
+    to {
+        fill: #f76414;
+    }
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+
+}
+
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    #hero .container {
+        max-width: 760px;
+        margin: 0 auto;
+
+    }
+
+    #hero p {
+        max-width: 720px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 24px;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 0 10px;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    #hero p {
+        max-width: 640px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {}
