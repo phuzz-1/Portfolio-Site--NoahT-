@@ -18,16 +18,21 @@
 
 <body>
     <header>
-        <div class="inline">
-            <img src="img/logo.svg" class="logo" alt="logo image">
+        <div class="navtoggle" id="myNavtoggle">
+            <div class="inline">
+                <img src="img/logo.svg" class="logo" alt="logo image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="full-width">Work</a></li>
+                    <li><a href="about.html" class="full-width">About</a></li>
+                    <li><a href="#contact" class="full-width" onclick="menuToggle()">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <img src="img/menuIcon.svg">
+                        </a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <!-- Context section -->
@@ -290,6 +295,8 @@
         </div>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
