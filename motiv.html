@@ -18,20 +18,22 @@
 
 <body>
     <header>
-        <div class="navtoggle" id="myNavtoggle">
-            <div class="inline">
-                <img src="img/logo.svg" class="logo" alt="logo image">
+        <div class="headerClamp">
+            <div class="navtoggle" id="myNavtoggle">
+                <div class="inline">
+                    <img src="img/logo.svg" class="logo" alt="logo image">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="full-width">Work</a></li>
+                        <li><a href="about.html" class="full-width">About</a></li>
+                        <li><a href="#contact" class="full-width" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <img src="img/menuIcon.svg">
+                            </a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="full-width">Work</a></li>
-                    <li><a href="about.html" class="full-width">About</a></li>
-                    <li><a href="#contact" class="full-width" onclick="menuToggle()">Contact</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                            <img src="img/menuIcon.svg">
-                        </a></li>
-                </ul>
-            </nav>
         </div>
     </header>
     <main class="mBg paddingW16 paddingBot  ">

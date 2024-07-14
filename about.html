@@ -17,51 +17,60 @@
 
 <body>
     <header>
-        <div class="navtoggle" id="myNavtoggle">
-            <div class="inline">
-                <img src="img/logo.svg" class="logo" alt="logo image">
+        <div class="headerClamp">
+            <div class="navtoggle" id="myNavtoggle">
+                <div class="inline">
+                    <img src="img/logo.svg" class="logo" alt="logo image">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="full-width">Work</a></li>
+                        <li><a href="about.html" class="full-width">About</a></li>
+                        <li><a href="#contact" class="full-width" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <img src="img/menuIcon.svg">
+                            </a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="full-width">Work</a></li>
-                    <li><a href="about.html" class="full-width">About</a></li>
-                    <li><a href="#contact" class="full-width" onclick="menuToggle()">Contact</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                            <img src="img/menuIcon.svg">
-                        </a></li>
-                </ul>
-            </nav>
         </div>
-
     </header>
-    <main>
+    <main class="container">
         <div>
-            <h1>About</h1>
-        </div>
-        <div>
-            <picture>
-                <source srcset="https://i.pravatar.cc/600"" media=" (max-width:767px)">
-                <img src="https://i.pravatar.cc/1200"" alt=" not a picture of me">
-            </picture>
-            <p>
-                ↑ not me, haha. (placeholder)
-            </p>
+            <h2 class="aboutH2">
+                About Me
+            </h2>
+            <div class="about-top">
 
-            <div class="">
-                <h2>
-                    About Me
-                </h2>
-                <p>
-                    I am is a visual designer from Twin Cities, Minnesota, with over five years of experience in
-                    leading graphic design, branding, and IT for a small e-commerce company. I recently expanded
-                    my skill set with UI design through CareerFoundry. I am a driven and curious designer
-                    fascinated by the role design plays in our lives. Guided by empathy and a love of learning, I
-                    strive to understand the concepts, processes, and ideas shaping our interaction with design. My
-                    career has been built on self-directed learning, consistently acquiring the skills I need to achieve
-                    goals and overcome obstacles. When I’m not designing, I enjoy playing broomball in the winter
-                    and hiking in the great outdoors in the summer.
-                </p>
-                <a href="files\Placeholder-PDF.pdf" download>Download my placeholder CV</a>
+                <div class="avatar-section ">
+                    <div>
+                        <picture>
+                            <source srcset="https://i.pravatar.cc/600"" media=" (max-width:767px)">
+                            <img src="https://i.pravatar.cc/1200"" class=" imgFix" alt=" not a picture of me">
+                        </picture>
+                        <p>
+                            ↑ not me, haha.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="about-text">
+                    <h2>
+                        About Me
+                    </h2>
+                    <p>
+                        I am is a visual designer from Twin Cities, Minnesota, with over five years of experience in
+                        leading graphic design, branding, and IT for a small e-commerce company. I recently expanded
+                        my skill set with UI design through CareerFoundry. I am a driven and curious designer
+                        fascinated by the role design plays in our lives. Guided by empathy and a love of learning, I
+                        strive to understand the concepts, processes, and ideas shaping our interaction with design. My
+                        career has been built on self-directed learning, consistently acquiring the skills I need to
+                        achieve
+                        goals and overcome obstacles. When I’m not designing, I enjoy playing broomball in the winter
+                        and hiking in the great outdoors in the summer.
+                    </p>
+                    <a href="files\Placeholder-PDF.pdf" download class="button2">Download my placeholder CV</a>
+                </div>
             </div>
             <div class="">
                 <h2>
@@ -131,6 +140,8 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
+
+
 
 
 </html>

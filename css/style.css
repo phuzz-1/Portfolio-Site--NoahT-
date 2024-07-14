@@ -3,6 +3,7 @@
 :root {
     --black: #262626;
     --white: #ffffff;
+
 }
 
 * {
@@ -18,6 +19,9 @@ body {
     font-weight: 300;
     line-height: 1.4;
     color: var(--black);
+
+
+
 }
 
 h1,
@@ -85,6 +89,7 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 5;
 
 
 }
@@ -228,7 +233,7 @@ nav>ul>li>a:hover {
 }
 
 .imgFix {
-    margin-bottom: -7px;
+    margin-bottom: -6px;
 }
 
 .imgBotRadius {
@@ -250,6 +255,14 @@ nav>ul>li>a:hover {
 }
 
 /* utility classes */
+.section {
+    padding: 16px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .noMargin {
     margin: 0px !important
 }
@@ -404,11 +417,93 @@ nav>ul>li>a:hover {
 }
 
 
+/* about page */
+.about-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 20px;
+    padding-top: 24px;
+}
+
+.avatar-section {
+    min-width: 190px;
+
+}
+
+.avatar-section>div {
+    position: relative;
+
+
+}
+
+.avatar-section>div>p {
+    position: absolute;
+    bottom: -24px;
+    margin: 0;
+}
+
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+    padding-top: 24px;
+}
+
+.about-text h2,
+.about-text p {
+    margin-top: 0;
+
+}
+
+.aboutH2 {
+    display: none;
+}
+
+.about-text>.button2 {
+    padding-top: 10px;
+}
+
+/* forklore page */
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.initialResearchL {
+    flex-grow: 1;
+}
+
+.initialResearchR {
+    font-size: smaller;
+    min-width: 40%;
+    flex-grow: 1;
+}
+
+.flexReverse {
+    flex-direction: column-reverse;
+}
+
+.homePageL>div,
+.mealPlannerR>div,
+.recipeL div:not(:first-child) {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iuDesign div h2 {
+    margin-top: 0;
+}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+
     header {
         text-align: unset;
         padding: 20px 0 13px;
@@ -435,6 +530,10 @@ Medium devices (640px and larger)
         text-align: center;
         margin: 0 auto;
         padding-top: 24px;
+    }
+
+    .container>div {
+        padding-top: 65px;
     }
 
     [class*="col-"] {
@@ -469,7 +568,104 @@ Medium devices (640px and larger)
         display: none;
     }
 
+    /* about page */
+    .about-top {
+        display: flex;
+        flex-direction: row;
+        gap: 10px 20px;
+        padding-top: 24px;
+    }
 
+    .avatar-section {
+        min-width: 190px;
+
+    }
+
+    .avatar-section>div {
+        position: relative;
+
+    }
+
+    .avatar-section>div>p {
+        position: absolute;
+        bottom: -24px;
+        margin: 0;
+    }
+
+
+
+    .aboutH2 {
+        display: block;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 70%;
+        padding-top: unset;
+    }
+
+    .about-text>h2 {
+        display: none;
+    }
+
+    .about-text h2,
+    .about-text p {
+        margin-top: 0;
+
+    }
+
+    /* forklore page */
+    .flex {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .initialResearchL {
+        flex-grow: 1;
+    }
+
+    .initialResearchR {
+        font-size: smaller;
+        min-width: 40%;
+        flex-grow: 1;
+    }
+
+    .flexCenter {
+        align-items: center;
+    }
+
+    .paddingBot>.flex {
+        align-items: stretch;
+    }
+
+    .flex.recipeR {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .recipeL {
+        height: fit-content;
+    }
+
+    .fYellow.card .flex {
+        flex-direction: column;
+    }
+
+    .fYellow.card .flex>.flex {
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .fYellow.card .flex>div>p {
+        max-width: 46%;
+        padding-top: 36px;
+        padding-right: 60px;
+        text-wrap: pretty;
+    }
 
 }
 
@@ -478,6 +674,12 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+    .headerClamp {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     body {
         font-size: 18px;
     }
@@ -491,7 +693,16 @@ Large devices (1024px or larger)
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* forklore */
+    .initialResearchR {
+        font-size: medium;
+        min-width: 40%;
+        flex-grow: 1;
+    }
+
 }
+
 
 /* ==============================
 X-large devices (1440px or larger)

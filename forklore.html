@@ -18,25 +18,27 @@
 
 <body>
     <header>
-        <div class="navtoggle" id="myNavtoggle">
-            <div class="inline">
-                <img src="img/logo.svg" class="logo" alt="logo image">
+        <div class="headerClamp">
+            <div class="navtoggle" id="myNavtoggle">
+                <div class="inline">
+                    <img src="img/logo.svg" class="logo" alt="logo image">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="full-width">Work</a></li>
+                        <li><a href="about.html" class="full-width">About</a></li>
+                        <li><a href="#contact" class="full-width" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <img src="img/menuIcon.svg">
+                            </a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="full-width">Work</a></li>
-                    <li><a href="about.html" class="full-width">About</a></li>
-                    <li><a href="#contact" class="full-width" onclick="menuToggle()">Contact</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                            <img src="img/menuIcon.svg">
-                        </a></li>
-                </ul>
-            </nav>
         </div>
     </header>
     <main>
         <!-- Context section -->
-        <div class="container">
+        <div class="section">
             <div>
                 <div>
                     <h2>Context</h2>
@@ -68,22 +70,23 @@
             </div>
         </div>
         <!-- Research Section -->
-        <div class="container fLightGreen">
-            <div>
-                <div>
-                    <h2>Initial Research</h2>
-                </div>
+        <div class="fLightGreen"">
+            <div class=" section "><div>
+                <h2>Initial Research</h2>
+            </div>
+            <div class=" flex">
+            <div class=" initialResearchL">
                 <div>
                     <p>Before development I conducted some user research by interviewing
                         potential users. I wanted to find out why people cooked at home and what the biggest pain points
                         that stood in their way. </p>
                 </div>
             </div>
-            <div>
+            <div class="initialResearchR">
                 <div>
-                    <div class="smallCard ">
+                    <div class=" smallCard ">
                         <p>
-                        <h4 class="topMarginDelete">Key patterns that emerged from initial user research:</h4>
+                        <h4 class=" topMarginDelete">Key patterns that emerged from initial user research:</h4>
                         </p>
                         <ul>
                             <li>
@@ -106,171 +109,195 @@
                 </div>
             </div>
         </div>
+        </div>
+        </div>
         <!-- User personas Section -->
-        <div class="container fYellow">
-            <div>
-
-                <h2>User personas</h2>
-
+        <div class="fYellow">
+            <div class="section ">
+                <div>
+                    <h2>User personas</h2>
+                </div>
+                <picture>
+                    <source srcset="img/forklore/user-persona@600w.png" media=" (max-width:767px)">
+                    <img src="img/forklore/user-persona@1200w.png" alt=" User personas">
+                </picture>
             </div>
-            <picture>
-                <source srcset="img/forklore/user-persona@600w.png" media=" (max-width:767px)">
-                <img src="img/forklore/user-persona@1200w.png" alt=" User personas">
-            </picture>
         </div>
         <!-- User flow Section -->
-        <div class="container">
+        <div class="section">
             <div>
-
                 <h2>User flow</h2>
-
             </div>
             <picture>
                 <source srcset="img/forklore/user-flow@600w.png" media=" (max-width:767px)">
                 <img src="img/forklore/user-flow@1200w.png" alt=" User flow">
             </picture>
         </div>
+
         <!-- User Wireframe Section -->
-        <div class="container fLightGreen">
-            <div>
-
-                <h2>Wireframes</h2>
-
-            </div>
-            <div>
-                <h3>
-                    Low-fidelity
-                </h3>
-                <picture>
-                    <source srcset="img/forklore/Low-Fidelity@600w.png" media=" (max-width:767px)">
-                    <img src="img/forklore/Low-Fidelity@1200w.png" alt=" Low-fidelity Wireframe">
-                </picture>
-            </div>
-            <div>
-                <h3>
-                    Mid-fidelity
-                </h3>
-                <picture>
-                    <source srcset="img/forklore/Mid-fidelity@600w.png" media=" (max-width:767px)">
-                    <img src="img/forklore/Mid-Fidelity@1200w.png" alt=" Mid-fidelity Wireframe">
-                </picture>
-            </div>
-            <!-- Style guide Sub-section -->
-            <div class="container card fPurple ">
-                <h2 class="topMarginDelete">
-                    Style Guide
-                </h2>
-                <p>I wanted the design to feel both calming and inspiring, mirroring the transformation of kitchen
-                    stress into culinary confidence. The color palette balances earthy tones with refreshing accents,
-                    creating an interface that soothes meal planning anxieties while subtly energizing users' cooking
-                    aspirations.</p>
-                <div class="marginTop">
+        <div class="">
+            <div class="section ">
+                <div>
+                    <h2>Wireframes</h2>
+                </div>
+                <div>
+                    <h3 class="paddingBot">
+                        Low-fidelity
+                    </h3>
                     <picture>
-                        <source srcset="img/forklore/Color-guide@600w.png" media=" (max-width:767px)">
-                        <img src="img/forklore/Color-guide@1200w.png" class="imgFix" alt=" Style guide">
+                        <source srcset="img/forklore/Low-Fidelity@600w.png" media=" (max-width:767px)">
+                        <img src="img/forklore/Low-Fidelity@1200w.png" alt=" Low-fidelity Wireframe">
                     </picture>
                 </div>
+                <div class="paddingBot">
+                    <h3 class="paddingBot">
+                        Mid-fidelity
+                    </h3>
+                    <picture>
+                        <source srcset="img/forklore/Mid-fidelity@600w.png" media=" (max-width:767px)">
+                        <img src="img/forklore/Mid-Fidelity@1200w.png" alt=" Mid-fidelity Wireframe">
+                    </picture>
+                </div>
+                <!-- Style guide Sub-section -->
+                <div class="section card fPurple ">
+                    <h2 class="topMarginDelete">
+                        Style Guide
+                    </h2>
+                    <p>I wanted the design to feel both calming and inspiring, mirroring the transformation of kitchen
+                        stress into culinary confidence. The color palette balances earthy tones with refreshing
+                        accents,
+                        creating an interface that soothes meal planning anxieties while subtly energizing users'
+                        cooking
+                        aspirations.</p>
+                    <div class="marginTop">
+                        <picture>
+                            <source srcset="img/forklore/Color-guide@600w.png" media=" (max-width:767px)">
+                            <img src="img/forklore/Color-guide@1200w.png" class="imgFix" alt=" Style guide">
+                        </picture>
+                    </div>
+                </div>
             </div>
-
         </div>
         <!-- UI design Section -->
-        <div class="container">
-            <div>
-
-                <h2>UI design</h2>
-
-            </div>
-            <!-- Home Page Sub-section -->
-            <div class="container fBlue largeCard cardText">
-                <picture>
-                    <source srcset="img\forklore\Home-Page@600w.png" media=" (max-width:767px)">
-                    <img src="img\forklore\Home-Page@1200w.png" alt=" Mockup of homepage on phone">
-                </picture>
+        <div class="fLightGreen">
+            <div class="section iuDesign ">
                 <div>
-                    <h2>
-                        HomePage
-                    </h2>
-                    <p>
-                        Discover new favorites with featured handpicked recipes. Keep track of recent activity and
-                        upcoming meals with our intuitive dashboard.
-                    </p>
+                    <h2>UI design</h2>
                 </div>
-            </div>
-            <!-- Meal Planner Sub-section -->
-            <div class="container fPurple largeCard cardText">
-
-                <div>
-                    <h2>
-                        Meal Planner
-                    </h2>
-                    <p>
-                        Discover new favorites with featured handpicked recipes. Keep track of recent activity and
-                        upcoming meals with our intuitive dashboard.
-                    </p>
-                </div>
-                <picture>
-                    <source srcset="img\forklore\Meal-Planner@600w.png" media=" (max-width:767px)">
-                    <img src="img\forklore\Meal-Planner@1200w.png" alt=" Mockup of meal page on phone">
-                </picture>
-            </div>
-            <!-- Recipes Sub-section -->
-            <div class="container">
-
-                <div class="fBlue card cardText botPaddingDelete ">
-                    <div>
+                <!-- Home Page Sub-section -->
+                <div class="section fBlue largeCard cardText flex flexReverse flexCenter">
+                    <div class="homePageL">
+                        <div>
+                            <picture>
+                                <source srcset="img\forklore\Home-Page@600w.png" media=" (max-width:767px)">
+                                <img src="img\forklore\Home-Page@1200w.png" alt=" Mockup of homepage on phone">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="homePageR">
                         <h2>
-                            Recipe
+                            HomePage
                         </h2>
                         <p>
                             Discover new favorites with featured handpicked recipes. Keep track of recent activity and
                             upcoming meals with our intuitive dashboard.
                         </p>
                     </div>
-                    <picture>
-                        <source srcset="img\forklore\Recipes-left@600w.png" media=" (max-width:767px)">
-                        <img src="img\forklore\Recipes-left@1200w.png" class="imgFix"
-                            alt=" Mockup of recipe page on phone">
-                    </picture>
                 </div>
-                <div>
-                    <div class="fRed card topPaddingDelete">
-                        <picture>
-                            <source srcset="img\forklore\Recipes-right1@600w.png" media=" (max-width:767px)">
-                            <img src="img\forklore\Recipes-right1@1200w.png" alt=" Mockup of recipe page on phone">
-                        </picture>
+                <!-- Meal Planner Sub-section -->
+                <div class="section fPurple largeCard cardText flex flexCenter">
+                    <div class="mealPlannerL">
+                        <h2>
+                            Meal Planner
+                        </h2>
+                        <p>
+                            Discover new favorites with featured handpicked recipes. Keep track of recent activity and
+                            upcoming meals with our intuitive dashboard.
+                        </p>
                     </div>
-                    <div class="fPurple card topPaddingDelete botPaddingDelete ">
-                        <picture>
-                            <source srcset="img\forklore\Recipes-right2@600w.png" media=" (max-width:767px)">
-                            <img src="img\forklore\Recipes-right2@1200w.png" class="imgFix"
-                                alt=" Mockup of recipe page on phone">
-                        </picture>
+                    <div class="mealPlannerR">
+                        <div>
+                            <picture>
+                                <source srcset="img\forklore\Meal-Planner@600w.png" media=" (max-width:767px)">
+                                <img src="img\forklore\Meal-Planner@1200w.png" alt=" Mockup of meal page on phone">
+                            </picture>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- End Sub-section -->
-            <div class="container fYellow card cardText">
-                <img src="img\forklore\forklore-logo.svg" class="endLogo" alt="Forklore logo">
-                <div>
-                    <p>
-                        Introducing Forklore—a meal planning and recipe app on a mission to make your culinary journey a
-                        breeze! Empower yourself with confidence and information to create delicious meals from start to
-                        finish. Say goodbye to mealtime stress and hello to a positive cooking experience.
+                <!-- Recipes Sub-section -->
+                <div class="paddingBot">
+                    <div class="flex">
+                        <div class="fBlue card cardText botPaddingDelete recipeL ">
+                            <div>
+                                <h2>
+                                    Recipe
+                                </h2>
+                                <p>
+                                    Discover new favorites with featured handpicked recipes. Keep track of recent
+                                    activity
+                                    and
+                                    upcoming meals with our intuitive dashboard.
+                                </p>
+                            </div>
+                            <div>
+                                <picture>
+                                    <source srcset="img\forklore\Recipes-left@600w.png" media=" (max-width:767px)">
+                                    <img src="img\forklore\Recipes-left@1200w.png" class="imgFix"
+                                        alt=" Mockup of recipe page on phone">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="flex recipeR">
+                            <div class="fRed card topPaddingDelete">
+                                <div>
+                                    <picture>
+                                        <source srcset="img\forklore\Recipes-right1@600w.png"
+                                            media=" (max-width:767px)">
+                                        <img src="img\forklore\Recipes-right1@1200w.png"
+                                            alt=" Mockup of recipe page on phone">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="fPurple card topPaddingDelete botPaddingDelete ">
+                                <div>
+                                    <picture>
+                                        <source srcset="img\forklore\Recipes-right2@600w.png"
+                                            media=" (max-width:767px)">
+                                        <img src="img\forklore\Recipes-right2@1200w.png" class="imgFix"
+                                            alt=" Mockup of recipe page on phone">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Sub-section -->
+                <div class="section fYellow card cardText">
 
-                        Vist Forklore.app now and start your flavorful adventure!
-                    </p>
+                    <div class="flex">
+                        <div class="flex"><img src="img\forklore\forklore-logo.svg" class="endLogo" alt="Forklore logo">
+                            <p>
+                                Introducing Forklore—a meal planning and recipe app on a mission to make your culinary
+                                journey a
+                                breeze! Empower yourself with confidence and information to create delicious meals from
+                                start to
+                                finish. Say goodbye to mealtime stress and hello to a positive cooking experience.
+                                <br><br>Vist Forklore.app now and start your flavorful adventure!
+                            </p>
+                        </div>
+                        <picture>
+                            <source srcset="img\forklore\End@600w.png" media=" (max-width:767px)">
+                            <img src="img\forklore\End@1200w.png" alt=" Mockup of Forklore app on computer and phone">
+                        </picture>
+                    </div>
                 </div>
-                <picture>
-                    <source srcset="img\forklore\End@600w.png" media=" (max-width:767px)">
-                    <img src="img\forklore\End@1200w.png" alt=" Mockup of Forklore app on computer and phone">
-                </picture>
             </div>
         </div>
 
 
     </main>
     <footer id="contact">
-        <div class="container">
+        <div class="section">
             <h2>
                 Get in touch
             </h2>
