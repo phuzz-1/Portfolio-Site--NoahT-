@@ -1,192 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Noah">
-    <meta name="description" content="A portfolio website for Noah">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Noah" />
+    <meta name="description" content="A portfolio website for Noah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css\normalize.css" />
     <link rel="stylesheet" type="text/css" href="css\style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Noah | Visual Designer</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <div class="headerClamp">
-            <div class="navtoggle" id="myNavtoggle">
-                <div class="inline">
-                    <img src="img/logo.svg" class="logo" alt="logo image">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html" class="full-width">Work</a></li>
-                        <li><a href="about.html" class="full-width">About</a></li>
-                        <li><a href="#contact" class="full-width" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
-                                <img src="img/menuIcon.svg">
-                            </a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="headerClamp">
+        <div class="navtoggle" id="myNavtoggle">
+          <div class="inline">
+            <img src="img/logo.svg" class="logo" alt="logo image" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html" class="full-width">Work</a></li>
+              <li><a href="about.html" class="full-width">About</a></li>
+              <li>
+                <a href="#contact" class="full-width" onclick="menuToggle()"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                >
+                  <img src="img/menuIcon.svg" />
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
-    <main class="mBg paddingW16 paddingBot  ">
-        <!-- Context section -->
-        <div class="container marginBot ">
+    <main class="mBg paddingW16 paddingBot">
+      <!-- Context section -->
+      <div class="container marginBot">
+        <div>
+          <img
+            src="img\motiv\motiv-logo.svg"
+            class="logo elCenter"
+            alt="motiv logo"
+          />
+          <div class="card cardText white mBorder1 marginTop">
+            <h2 class="topMarginDelete">Context</h2>
             <div>
-                <img src="img\motiv\motiv-logo.svg" class="logo elCenter" alt="motiv logo">
-                <div class="card cardText white mBorder1 marginTop">
-                    <h2 class="topMarginDelete">Context</h2>
-                    <div>
-                        <h3>Problem</h3>
-                        <p>Traditional task prioritization methods often fail to drive motivation effectively,
-                            particularly for non-neurotypical individuals. This misalignment can lead to decreased
-                            productivity and difficulty in managing tasks. Users need a tool that helps them organize
-                            their task in a way that aligns with their personal motivations and keeps them engaged.</p>
-                    </div>
-                    <div>
-                        <h3>Solution</h3>
-                        <p>Motive is a productivity app designed to address this issue by reimagining how lists
-                            function. By adapting task organization to the user's personal motivations, Motive aims to
-                            enhance productivity and make task management more intuitive.</p>
-                    </div>
-                </div>
-
+              <h3>Problem</h3>
+              <p>
+                Traditional task prioritization methods often fail to drive
+                motivation effectively, particularly for non-neurotypical
+                individuals. This misalignment can lead to decreased
+                productivity and difficulty in managing tasks. Users need a tool
+                that helps them organize their task in a way that aligns with
+                their personal motivations and keeps them engaged.
+              </p>
             </div>
             <div>
-                <picture>
-                    <source srcset="img\motiv\Header-art@600w.png"" media=" (max-width:767px)">
-                    <img src="img\motiv\Header-art@1200w.png"" alt=" space illustration">
-                </picture>
+              <h3>Solution</h3>
+              <p>
+                Motive is a productivity app designed to address this issue by
+                reimagining how lists function. By adapting task organization to
+                the user's personal motivations, Motive aims to enhance
+                productivity and make task management more intuitive.
+              </p>
             </div>
+          </div>
         </div>
-        <!-- Style Guide section -->
-        <div class="container marginBot card  white mBorder1 ">
-            <h2 class="topMarginDelete">Style Guide</h2>
-            <div class="smallCard mOffWhite mBorder2 cardText ">
-                <p class="noMargin">
-                    Productivity apps shouldn't feel crowded or overwhelming. They should present and empower the
-                    information they hold without getting in the way. The design of Motive reflects this philosophy,
-                    utilizing lighter, calming colors and friendly typography to create a welcoming and efficient user
-                    experience. The interface is crafted to empower users by making task management straightforward and
-                    visually appealing, ensuring that the app supports productivity without becoming a distraction.
-                </p>
-            </div>
-            <div class="marginTop">
-                <picture>
-                    <source srcset="img/motiv/Style-guide@600w.png"" media=" (max-width:767px)">
-                    <img src="img/motiv/Style-guide@1200w.png"" alt=" Style Guide">
-                </picture>
-            </div>
+        <div>
+          <picture>
+            <source
+              srcset="img\motiv\Header-art@600w.png"
+              media="
+            (max-width:767px)"
+            />
+            <img
+              src="img\motiv\Header-art@1200w.png"
+              alt="
+            space illustration"
+            />
+          </picture>
         </div>
-        <!-- User Flow Section-->
-        <div class="container marginBot  marginBotcard  white mBorder1">
-            <h2>User Flow</h2>
-            <div>
-                <picture>
-                    <source srcset="img/motiv/User-flow@600w.png"" media=" (max-width:767px)">
-                    <img src="img/motiv/User-flow@1200w.png"" alt=" Style Guide">
-                </picture>
-            </div>
+      </div>
+      <!-- Style Guide section -->
+      <div class="container marginBot card white mBorder1">
+        <h2 class="topMarginDelete">Style Guide</h2>
+        <div class="smallCard mOffWhite mBorder2 cardText">
+          <p class="noMargin">
+            Productivity apps shouldn't feel crowded or overwhelming. They
+            should present and empower the information they hold without getting
+            in the way. The design of Motive reflects this philosophy, utilizing
+            lighter, calming colors and friendly typography to create a
+            welcoming and efficient user experience. The interface is crafted to
+            empower users by making task management straightforward and visually
+            appealing, ensuring that the app supports productivity without
+            becoming a distraction.
+          </p>
         </div>
-        <!-- User Wireframe Section -->
-        <div class="container  marginBot card  white mBorder1">
-            <div>
-                <h2>
-                    Low-fidelity
-                </h2>
-                <picture>
-                    <source srcset="img/motiv/Low-Fidelity@600w.png"" media=" (max-width:767px)">
-                    <img src="img/motiv/Low-Fidelity@1200w.png"" alt=" Low-fidelity Wireframe">
-                </picture>
-            </div>
-            <div>
-                <h2>
-                    Mid-fidelity
-                </h2>
-                <picture>
-                    <source srcset="img/motiv/Mid-fidelity@600w.png"" media=" (max-width:767px)">
-                    <img src="img/motiv/Mid-Fidelity@1200w.png"" alt=" Mid-fidelity Wireframe">
-                </picture>
-            </div>
+        <div class="marginTop">
+          <picture>
+            <source
+              srcset="img/motiv/Style-guide@600w.png"
+              media="
+            (max-width:767px)"
+            />
+            <img src="img/motiv/Style-guide@1200w.png" alt=" Style Guide" />
+          </picture>
         </div>
-        <!-- Mid-fidelity section -->
-        <div class="container  marginBot card  white mBorder1">
-            <h2>High-fidelity</h2>
-            <div>
-                <picture>
-                    <source srcset="img\motiv\High-fidelity@600w.png"" media=" (max-width:767px)">
-                    <img src="img\motiv\High-fidelity@1200w.png"" alt=" High-fidelity Wireframes">
-                </picture>
-            </div>
+      </div>
+      <!-- User Flow Section-->
+      <div class="container marginBot marginBotcard white mBorder1">
+        <h2>User Flow</h2>
+        <div>
+          <picture>
+            <source
+              srcset="img/motiv/User-flow@600w.png"
+              media="
+            (max-width:767px)"
+            />
+            <img
+              src="img/motiv/User-flow@1200w.png"
+              alt="
+            Style Guide"
+            />
+          </picture>
         </div>
-        <!-- Mid-fidelity section -->
-        <div class="container  card  white mBorder1">
-
-            <h2>Motivation planner</h2>
-            <div>
-                <div>
-                    <picture>
-                        <source srcset="img\motiv\End-top@1x.png"" media=" (max-width:767px)">
-                        <img src="img\motiv\End-top@2x.png"" alt=" Style Guide">
-                    </picture>
-                    <picture>
-                        <source srcset="img\motiv\End-bot@1x.png"" media=" (max-width:767px)">
-                        <img src="img\motiv\End-bot@2x.png"" alt=" Style Guide">
-                    </picture>
-                </div>
-                <div class="smallCard mOffWhite mBorder1 cardText ">
-                    <p class="topMarginDelete">The Motivation Planner is the core function and differentiator of Motiv,
-                        designed to assist users
-                        in defining their daily objectives and aligning them with their current mood and motivations
-                        through a series of guided questions. This approach aims to create a more personalized and
-                        effective planning experience, enhancing user engagement and productivity.</p>
-                    <p class="noMargin ">
-                        However, the current version of the Motivation Planner falls short. The alignment of users'
-                        goals with their motivations is not as seamless as it could be, which can lead to a disconnect
-                        and reduced effectiveness. To address this, I believe that additional user research is needed.
-                        By gaining deeper insights into user behaviors, preferences, and motivational triggers, we can
-                        refine the tool to better meet their needs.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <!-- User Wireframe Section -->
+      <div class="container marginBot card white mBorder1">
+        <div>
+          <h2>Low-fidelity</h2>
+          <picture>
+            <source
+              srcset="img/motiv/Low-Fidelity@600w.png"
+              media="
+            (max-width:767px)"
+            />
+            <img
+              src="img/motiv/Low-Fidelity@1200w.png"
+              alt=" Low-fidelity Wireframe"
+            />
+          </picture>
         </div>
+        <div>
+          <h2>Mid-fidelity</h2>
+          <picture>
+            <source
+              srcset="img/motiv/Mid-fidelity@600w.png"
+              media="
+            (max-width:767px)"
+            />
+            <img
+              src="img/motiv/Mid-Fidelity@1200w.png"
+              alt=" Mid-fidelity Wireframe"
+            />
+          </picture>
+        </div>
+      </div>
+      <!-- Mid-fidelity section -->
+      <div class="container marginBot card white mBorder1">
+        <h2>High-fidelity</h2>
+        <div>
+          <picture>
+            <source
+              srcset="img\motiv\High-fidelity@600w.png"
+              media="
+            (max-width:767px)"
+            />
+            <img
+              src="img\motiv\High-fidelity@1200w.png"
+              alt=" High-fidelity Wireframes"
+            />
+          </picture>
+        </div>
+      </div>
+      <!-- Mid-fidelity section -->
+      <div class="container card white mBorder1">
+        <h2>Motivation planner</h2>
+        <div>
+          <div>
+            <picture>
+              <source
+                srcset="img\motiv\End-top@1x.png"
+                media="
+              (max-width:767px)"
+              />
+              <img
+                src="img\motiv\End-top@2x.png"
+                alt="
+              Style Guide"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="img\motiv\End-bot@1x.png"
+                media="
+              (max-width:767px)"
+              />
+              <img
+                src="img\motiv\End-bot@2x.png"
+                alt="
+              Style Guide"
+              />
+            </picture>
+          </div>
+          <div class="smallCard mOffWhite mBorder1 cardText">
+            <p class="topMarginDelete">
+              The Motivation Planner is the core function and differentiator of
+              Motiv, designed to assist users in defining their daily objectives
+              and aligning them with their current mood and motivations through
+              a series of guided questions. This approach aims to create a more
+              personalized and effective planning experience, enhancing user
+              engagement and productivity.
+            </p>
+            <p class="noMargin">
+              However, the current version of the Motivation Planner falls
+              short. The alignment of users' goals with their motivations is not
+              as seamless as it could be, which can lead to a disconnect and
+              reduced effectiveness. To address this, I believe that additional
+              user research is needed. By gaining deeper insights into user
+              behaviors, preferences, and motivational triggers, we can refine
+              the tool to better meet their needs.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="contact">
-        <div class="container">
-            <h2>
-                Get in touch
-            </h2>
-            <p>
-                Reach me here
-            </p>
-            <div>
-                <a href="mailto:email@gmail.com" class="button2">Email me</a>
-            </div>
-            <div>
-                <!--Social Media Layout and Placeholders-->
-                <a href="LINKEDIN-URL" target="_blank">
-                    <img src="img/linkedIn.svg">
-                </a>
-                <a href="BEHANCE-URL" target="_blank">
-                    <img src="img/behance.svg">
-
-                </a>
-            </div>
+      <div class="container">
+        <h2>Get in touch</h2>
+        <p>Reach me here</p>
+        <div>
+          <a href="mailto:email@gmail.com" class="button2">Email me</a>
         </div>
-        <p>Copyright Noah 2024</p>
+        <div>
+          <!--Social Media Layout and Placeholders-->
+          <a href="LINKEDIN-URL" target="_blank">
+            <img src="img/linkedIn.svg" alt="LinkedIn logo" />
+          </a>
+          <a href="BEHANCE-URL" target="_blank">
+            <img src="img/behance.svg" alt="Behance logo" />
+          </a>
         </div>
-
+      </div>
+      <p>Copyright Noah 2024</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
